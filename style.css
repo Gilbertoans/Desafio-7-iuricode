@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-image: url(imagens/fon.png);
+  background-size: cover;
+}
+
+#container {
+  width: 1298px;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#empresa h1 {
+  font-weight: bold;
+  color: #fff;
+}
+
+#valorant {
+  width: 305px;
+  height: 76px;
+  margin-top: 260px;
+}
+
+#personagens {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 340px;
+}
+
+.nome {
+  color: #ff4656;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.img {
+  position: relative;
+  right: 160px;
+  bottom: -10px;
+  margin-right: -140px;
+}
+
+.imagem {
+  position: relative;
+  top: -380px;
+  left: 150px;
+}
+
+.item {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #container {
+    width: 100vw;
+    height: 100vh;
+  }
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+
+  #logo {
+    height: 80px;
+  }
+
+  .item-logo {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #valorant {
+    margin: 0 auto;
+  }
+
+  #personagens {
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: center;
+  }
+
+  .imagem {
+    position: relative;
+    top: 60px;
+    left: -50px;
+  }
+
+  #media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .item {
+    padding: 5px;
+    width: 50px;
+  }
+}
